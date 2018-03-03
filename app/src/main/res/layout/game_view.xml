@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_game_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <com.hawallen.aircraft.GameSurfaceView
+        android:id="@+id/gs"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <TextView
+        android:id="@+id/tv_kill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip"
+        android:textColor="@color/red"
+        android:text="杀敌数：0"
+        android:textSize="16sp" />
+
+    <ImageButton
+        android:id="@+id/ibtn_fire_missile"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/fire_launch_bg_selector" />
+
+</RelativeLayout>
